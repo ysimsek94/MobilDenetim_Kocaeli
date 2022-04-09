@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:weightSum="2"
+    android:orientation="vertical"
+    android:paddingBottom="8dp">
+
+
+
+  <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/tvFromCamera"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:layout_margin="5dp"
+      android:drawableStart="@drawable/camera_icon2"
+      android:gravity="center_vertical"
+      android:text="Kamera ile çek"
+      android:textSize="22dp"
+      android:textStyle="bold"
+      style="@style/ActionItem"
+      />
+
+  <TextView
+      android:id="@+id/tvFromGallery"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:layout_margin="5dp"
+      android:drawableStart="@drawable/gallery_icon"
+      android:text="Galeriden seç"
+      android:textStyle="bold"
+      android:gravity="center_vertical"
+      android:textSize="22dp"
+      style="@style/ActionItem"/>
+
+
+
+</LinearLayout>

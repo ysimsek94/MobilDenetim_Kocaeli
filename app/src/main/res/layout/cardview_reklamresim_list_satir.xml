@@ -1,0 +1,72 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvReklamResimList"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+   android:layout_margin="5dp"
+    app:cardElevation="5dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_camera_alt_black_24dp"/>
+
+                <TextView
+                    android:id="@+id/tvDosyaAdi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimaryDark2"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/btn_ileri"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/right_arroww" />
+
+
+    </LinearLayout>
+<TextView
+    android:id="@+id/tvNoContent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Veri Yok"
+    android:visibility="gone"
+    android:gravity="center"/>
+</LinearLayout>
+</androidx.cardview.widget.CardView>

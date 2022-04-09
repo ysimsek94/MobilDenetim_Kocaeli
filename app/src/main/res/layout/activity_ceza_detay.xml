@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".ui.CezaDetayActivity">
+
+    <include
+        android:id="@+id/toolbarCezaDetay"
+        layout="@layout/toolbar_no_icon"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+          >
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:hint="Plaka"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxStrokeColor="@color/colorPrimaryDark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPlaka"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:hint="Ceza Türü"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxStrokeColor="@color/colorPrimaryDark"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCezaTur"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:hint="Kayıt Tipi"
+
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxStrokeColor="@color/colorPrimaryDark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etKayitTipi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:hint="Varaka No"
+
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxStrokeColor="@color/colorPrimaryDark" >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etVarakaNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:hint="Ihlal Maddesi"
+
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxStrokeColor="@color/colorPrimaryDark"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etIhlalMaddesi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:hint="Ihlal Bendi"
+
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxStrokeColor="@color/colorPrimaryDark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etIhlalBendi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:hint="Ihlal Tarihi"
+
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxStrokeColor="@color/colorPrimaryDark" >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etIhlalTarih"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:hint="Ihlal Adresi"
+
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxStrokeColor="@color/colorPrimaryDark"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etIhlalAdresi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:hint="Açıklama"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxStrokeColor="@color/colorPrimaryDark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etAciklama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:hint="Enc.Karar Tarihi"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxStrokeColor="@color/colorPrimaryDark" >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etEncKararTarihi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:hint="Ceza Tutarı"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxStrokeColor="@color/colorPrimaryDark"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCezaTutar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:hint="Işlem Tarihi"
+                
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxStrokeColor="@color/colorPrimaryDark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etIslemTarihi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:hint="Kaydeden"
+
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxStrokeColor="@color/colorPrimaryDark" >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etKaydeden"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

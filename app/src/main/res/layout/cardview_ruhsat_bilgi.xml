@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cvRuhsatOzet"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+        <View
+            android:id="@+id/isAktifLine"
+            android:layout_gravity="center_vertical"
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            android:background="#64DD17" />
+        <LinearLayout
+            android:padding="3dp"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="9dp"
+                    android:text="PLAKA"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:text=": "
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="33dp"
+                    android:layout_marginTop="9dp"
+                    android:textSize="16dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvPlakaNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="9dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                   />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="9dp"
+                    android:text="YBSNO "
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:text=": "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginTop="9dp"
+                    android:textSize="14dp"
+                    />
+                <TextView
+                    android:id="@+id/tvYbsNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="9dp"
+                    android:text=""
+                  
+                    android:textSize="14dp"
+                   />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="9dp"
+                    android:text="ADI   "
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:text=": "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="9dp"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:id="@+id/tvAdi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="9dp"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="9dp"
+                    android:text="TİP    "
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:text=": "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="9dp"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    />
+                <TextView
+                    android:id="@+id/tvTip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="9dp"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="9dp"
+                    android:text="Toplam Borç :"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tvToplamBorc"
+                    android:text="--"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="9dp"
+                  
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+      </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/ivGoToDenetimler"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/right_arroww" />
+
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>

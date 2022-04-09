@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="5dp"
+    android:padding="3dp">
+
+    <TextView
+        android:id="@+id/tvFormAdi"
+        android:layout_width="308dp"
+        android:text="text"
+        android:paddingStart="15dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:layout_gravity="center_vertical"
+        android:layout_height="50dp"/>
+    <CheckBox
+
+        android:id="@+id/cbFormIsChecked"
+        android:layout_width="35dp"
+        android:buttonTint="#E12161CD"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        style="@style/checkboxStyle"
+        />
+    <ImageView
+        android:layout_gravity="end"
+        android:id="@+id/imBtnGotoVaraka"
+        android:layout_width="42dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/right_arroww"/>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cvReklamResimList"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="15dp" >
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/tvKurumAdi"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_gravity="center"
+                    android:textColor="#373a6d"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+
+</LinearLayout>
+

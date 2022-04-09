@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="10"
+    android:orientation="vertical"
+
+    tools:context=".ui.ReklamGirisActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+
+
+        <include
+            android:id="@+id/toolbarReklamGiris"
+            layout="@layout/toolbar_no_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:hint="Plaka"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxStrokeColor="@color/colorPrimaryDark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etReklamPlaka"
+                    android:enabled="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textSize="14dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/tipBasTarih"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconMode="custom"
+                app:endIconDrawable="@drawable/calendar"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="25dp"
+                android:hint="Başlangıç Tarihi"
+                android:inputType="textCapCharacters"
+                android:textColor="#999999"
+                android:importantForAutofill="no">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etBaslangiTarihi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="datetime"
+                    android:textSize="16dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/tipBitTarih"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconMode="custom"
+                app:endIconDrawable="@drawable/calendar"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="25dp"
+                android:hint="Bitiş Tarihi"
+                android:inputType="textCapCharacters"
+                android:textColor="#999999"
+                android:importantForAutofill="no">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etBitisTarihi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="datetime"
+                    android:textSize="16dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:hint="Ybs No"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxStrokeColor="@color/colorPrimaryDark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etYbsNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Açıklama"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxStrokeColor="@color/colorPrimaryDark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etReklamAciklama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="10dp"
+            android:weightSum="4">
+
+            <CheckBox
+                android:id="@+id/cbOn"
+                android:layout_width="0dp"
+                android:buttonTint="#E12161CD"
+                android:layout_height="30dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:text="Ön"
+                android:textSize="14dp" />
+
+            <CheckBox
+                android:id="@+id/cbArka"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:buttonTint="#E12161CD"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:text="Arka"
+                android:textSize="14dp" />
+
+            <CheckBox
+                android:id="@+id/cbSag"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:buttonTint="#E12161CD"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:text="Sağ"
+                android:textSize="14dp" />
+
+            <CheckBox
+                android:id="@+id/cbSol"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:buttonTint="#E12161CD"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:text="Sol"
+                android:textSize="14dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <CheckBox
+                android:id="@+id/cbIsAktif"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="15dp"
+                android:layout_weight=".5"
+                android:buttonTint="#E12161CD"
+                android:textStyle="bold"
+                android:layout_marginEnd="15dp"
+                android:text="Aktif"
+                android:textSize="14dp"/>
+            <TextView
+                android:id="@+id/tvImagePath"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/normalColor"
+                android:textStyle="bold"
+                android:visibility="gone"
+
+                />
+        </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="25dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="2dp"
+                        android:text="Resim Listesi"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:id="@+id/btnReklamViewBottomSheet"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/add_icon2"
+                        android:foregroundGravity="right"/>
+
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/mtrl_btn_text_color_disabled" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvImageList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:weightSum="3"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnReklamSil"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:text="Sil"
+                android:textAllCaps="false"
+                app:strokeColor="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16dp" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnReklamKaydet"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="Kaydet"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

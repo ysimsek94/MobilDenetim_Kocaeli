@@ -1,0 +1,193 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvSoforBilgisi"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="6dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginBottom="2dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="9dp"
+                        android:text="Ad                        :"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvAd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="9dp"
+                        android:text=""
+                     
+                        android:textSize="14sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="9dp"
+                        android:text="Soyad                 :"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvSoyad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="9dp"
+                        android:text=""
+                     
+                        android:textSize="14sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="9dp"
+                        android:text="TcNo                   :"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvTcNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="9dp"
+                        android:text=""
+                     
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+          <LinearLayout
+              android:layout_weight="1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+              <LinearLayout
+                  android:layout_weight="1"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="3dp"
+                      android:layout_marginTop="9dp"
+                      android:text="Eğitim Prog.      :"
+                      android:textSize="16sp"
+                      android:textStyle="bold" />
+
+                  <TextView
+                      android:id="@+id/tvEgitimProgrami"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="3dp"
+                      android:layout_marginTop="9dp"
+                      android:text=""
+                   
+                      android:textSize="14sp"/>
+              </LinearLayout>
+              <LinearLayout
+                  android:layout_weight="1"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="3dp"
+                      android:layout_marginTop="9dp"
+                      android:text="EgitimDönemi   :"
+                      android:textSize="16sp"
+                      android:textStyle="bold" />
+
+                  <TextView
+                      android:id="@+id/tvEgitimDonemi"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="3dp"
+                      android:layout_marginTop="9dp"
+                      android:text=""
+                   
+                      android:textSize="14sp"/>
+              </LinearLayout>
+              <LinearLayout
+                  android:layout_weight="1"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="3dp"
+                      android:layout_marginTop="9dp"
+                      android:text="Geçerlilik Tarihi :"
+                      android:textSize="16sp"
+                      android:textStyle="bold" />
+
+                  <TextView
+                      android:id="@+id/tvGecerlilikTarihi"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="3dp"
+                      android:layout_marginTop="9dp"
+                      android:text=""
+                   
+                      android:textSize="14sp"/>
+              </LinearLayout>
+
+          </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

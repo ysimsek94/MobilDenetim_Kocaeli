@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dembs.android.mobildenetim"
+    tools:ignore="LockedOrientationActivity">
+
+    <uses-feature
+        android:name="android.hardware.usb.host"
+        tools:ignore="ManifestOrder" />
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning,UnusedAttribute">
+        <activity
+            android:name=".ui.GuzergahActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.DenetimImageDetayActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.DenetimImageListActivity"
+            android:exported="true" />
+        <activity
+            android:exported="true"
+            android:name=".ui.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.ReklamListActivity" />
+        <activity android:name=".ui.BelgeListActivity" />
+        <activity android:name=".ui.IslemMenuActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+        <activity android:name=".ui.RehberPersonelListActivity" />
+        <activity android:name=".ui.TasinanKurumListActivity" />
+        <activity android:name=".ui.GuzergahListActivity" />
+        <activity android:name=".ui.VarakaResimDetayActivity" />
+        <activity android:name=".ui.RuhsatIslemleri" />
+        <activity android:name=".ui.DenetlenenRaporActivity" />
+        <activity android:name=".ui.DenetimDenetleyenActivity" />
+        <activity android:name=".ui.BelgeDetayActivity" />
+        <activity
+            android:name=".ui.VarakaActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".ui.RuhsatListActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".ui.DenetimListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.DenetimGirisActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.RuhsatAraActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.CezaListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.DenetimFormActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AracBilgisiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.RuhsatDetayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ReklamGirisActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SorgulaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SoforBilgisiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.CezaDetayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.GuncellemeTalebiListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AracSoforBilgisiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.VarakaYazdirActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ReklamResimDetayActivity"
+            android:screenOrientation="portrait" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCVXWAy3duoPQaXp0EyU3EvtVmhvljJJEI" /> <!-- Don't use my api key, it will not work for you. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.dembs.android.mobildenetim.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

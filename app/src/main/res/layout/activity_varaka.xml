@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    tools:context=".ui.VarakaActivity">
+
+    <include
+        android:id="@+id/toolbarVaraka"
+        layout="@layout/toolbar_no_icon" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="10dp"
+            
+            android:hint="Varaka No"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeColor="@color/colorPrimaryDark">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etVarakaNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:hint="Varaka Tarihi"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeColor="@color/colorPrimaryDark">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etVarakaTarihi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"  />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:hint="İhlal Maddesi"
+
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeColor="@color/colorPrimaryDark">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etVarakaIhlalMaddesi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"  />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:hint="İhlal Bendi"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeColor="@color/colorPrimaryDark">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etVarakaIhlalBendi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"  />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/tilTarih"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/calendar"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="15dp"
+            android:inputType="textCapCharacters"
+            android:textColor="#999999"
+            android:importantForAutofill="no">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etVarakaTamamlanmaTarihi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tamamlanma Tarihi"
+                android:textSize="18dp"
+                android:inputType="textCapCharacters" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Açıklama"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeColor="@color/colorPrimaryDark">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etVarakaAciklama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <CheckBox
+            android:id="@+id/cbVarakaTamamlandi"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Tamamlandı"
+            android:buttonTint="#E12161CD"
+            android:layout_gravity="center"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="8dp"
+        android:layout_marginTop="3dp"
+        app:cardCornerRadius="8dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="2dp"
+                    android:text="Resim Listesi"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/btnVarakaViewBottom"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/add_icon2"
+                    android:foregroundGravity="right" />
+
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/mtrl_btn_text_color_disabled" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvImageList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVarakaSil"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimaryDark"
+            app:strokeColor="@color/colorPrimaryDark"
+            android:layout_marginTop="15dp"
+            android:text="Sil"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVarakaKaydet"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="Kaydet"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

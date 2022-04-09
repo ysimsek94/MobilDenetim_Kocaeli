@@ -1,0 +1,74 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvDenetimImageList"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    app:cardCornerRadius="8dp"
+   android:layout_marginVertical="5dp"
+    android:layout_marginHorizontal="10dp"
+    app:cardElevation="@dimen/margin10">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_camera_alt_black_24dp"/>
+
+                <TextView
+                    android:id="@+id/tvDocName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/ivIleri"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/rightarroww" />
+
+
+    </LinearLayout>
+<TextView
+    android:id="@+id/tvNoContent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Veri Yok"
+    android:visibility="gone"
+    android:gravity="center"/>
+</LinearLayout>
+</androidx.cardview.widget.CardView>

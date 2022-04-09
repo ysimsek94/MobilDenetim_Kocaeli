@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/drawable/ic_login_bk.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/drawable/login_button_bk.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/drawable/login_shape_bk.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/drawable/person_add.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/drawable/reklam_icon.xml" value="0.1734375" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/layout-sw600dp/activity_belge_detay.xml" value="0.4132029339853301" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/layout-sw600dp/activity_denetim_giris.xml" value="0.264" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/layout-sw600dp/activity_islem_menu.xml" value="0.181640625" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/layout-sw600dp/activity_login.xml" value="0.2" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/layout-sw600dp/activity_ruhsat_ara.xml" value="0.181640625" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/layout-sw600dp/activity_splash.xml" value="0.13125" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/layout-sw600dp/activity_varaka_yazdir.xml" value="0.264" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/layout-sw600dp/cardview_belge_row.xml" value="0.536" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/layout-sw600dp/cardview_denetim_list_satir.xml" value="0.4" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/layout-sw600dp/cardview_ruhsat_bilgi.xml" value="0.4" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/layout-sw600dp/fragment_reklam_sorgulama.xml" value="0.1" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/layout-xlarge/alert_dialog_sofor_bul.xml" value="0.181640625" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/layout/activity_arac_sofor_bilgisi.xml" value="0.2421875" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/layout/activity_belge_detay.xml" value="0.2" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/layout/activity_belge_list.xml" value="0.16979166666666667" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/layout/activity_denetim_giris.xml" value="0.2421875" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/layout/activity_islem_menu.xml" value="0.2421875" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/layout/activity_main.xml" value="0.1078125" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/layout/activity_ruhsat_ara.xml" value="0.2421875" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/layout/activity_ruhsat_detay.xml" value="0.2421875" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/layout/activity_ruhsat_islemleri.xml" value="0.2421875" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/layout/activity_splash.xml" value="0.175" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/layout/activity_varaka.xml" value="0.2421875" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/layout/activity_varaka_yazdir.xml" value="0.453030303030303" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/layout/aler_dialog_sofor_bul.xml" value="0.18020833333333333" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/layout/cardview_belge_row.xml" value="0.264" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/layout/cardview_denetim_list_satir.xml" value="0.203125" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/layout/cardview_ruhsat_bilgi.xml" value="0.2421875" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/layout/toolbar_no_icon.xml" value="0.2421875" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/menu/add_denetim_menu.xml" value="0.2421875" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/menu/menu_denetleyen.xml" value="0.11354166666666667" />
+        <entry key="..\:/Users/protech/AndroidStudioProjects/MobilDenetim_Kocaeli/app/src/main/res/menu/menu_denetleyen_add.xml" value="0.11354166666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

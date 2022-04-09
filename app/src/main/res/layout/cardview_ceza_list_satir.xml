@@ -1,0 +1,110 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvCezaRow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginVertical="3dp"
+    android:elevation="@dimen/margin10"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:padding="@dimen/margin10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="9dp"
+                    android:text="Plaka"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:text=": "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="52dp"
+                    android:layout_marginTop="9dp"
+                    android:textSize="14dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvPlakaDL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="9dp"
+                    android:text=""
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="9dp"
+                    android:text="Tarih"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:text=": "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="56dp"
+                    android:layout_marginTop="9dp"
+                    android:textSize="14dp"
+                    />
+                <TextView
+                    android:id="@+id/tvTarihDL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="9dp"
+                    android:text=""
+                    
+                    android:textSize="12sp"
+                      />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:id="@+id/btn_ileri"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/right_arroww" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

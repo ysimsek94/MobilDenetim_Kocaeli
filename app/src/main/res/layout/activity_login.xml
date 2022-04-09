@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    style="@style/loginParent"
+    tools:context="com.dembs.android.mobildenetim.ui.LoginActivity">
+
+
+    <RelativeLayout
+        style="@style/parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/login_shape_bk"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/parent"
+                    android:background="@drawable/ic_login_bk"
+                    android:contentDescription="login background" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+           android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="35dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/headerText"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:text="M O B İ L  D E N E T İ M" />
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/loginCard"
+                app:cardCornerRadius="@dimen/loginCardRadius"
+                android:elevation="5dp"
+                android:layout_gravity="center"
+                android:layout_height="500dp"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:layout_marginBottom="@dimen/loginViewsMargin"
+                android:background="@color/whiteCardColor">
+
+
+
+                <LinearLayout
+                    style="@style/linearParent"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/loginViewsMargin">
+
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/ic_kocaeli"/>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="15dp"
+                        app:counterMaxLength="11"
+                        app:counterEnabled="true"
+                        app:boxStrokeColor="#0748ae">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etTcKimlikNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="T.C. Kimlik No"
+                            android:inputType="number" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="10dp"
+
+                        app:endIconMode="password_toggle"
+                        app:boxStrokeColor="#0748ae">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etSifre"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Şifre"
+                            android:inputType="textPassword" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <CheckBox
+                        android:id="@+id/cbRemember"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="wrap_content"
+                        android:buttonTint="#E12161CD"
+                        android:layout_height="30dp"
+                        android:text="Beni Hatırla" />
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnLogin"
+                        style="@style/loginButton"
+                        android:text="Giriş Yap"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+
+
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin10"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="75dp">
+                <ImageView
+                    android:id="@+id/loginDembs"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/loginCardView"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bigatek" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="Copyright  by BIGATEK"
+                    android:textSize="12dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/progressBar"
+        layout="@layout/progressbar"/>
+
+</RelativeLayout>
+
+

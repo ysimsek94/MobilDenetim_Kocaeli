@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="15dp"
+    tools:context=".ui.BelgeDetayActivity">
+
+    <include
+        android:id="@+id/toolbarBelgeDetay"
+        layout="@layout/toolbar_no_icon"/>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="25dp"
+                android:hint="Belge Adı"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxStrokeColor="@color/colorPrimaryDark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etBelgeAdi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="18dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:hint="Plaka"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxStrokeColor="@color/colorPrimaryDark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPlaka"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="18dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:hint="Sayısı"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxStrokeColor="@color/colorPrimaryDark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etSayisi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="18dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:hint="Araç Sahibi"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxStrokeColor="@color/colorPrimaryDark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etAracSahibi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="18dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:hint="GeçerlilikTarihi"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                android:layout_marginBottom="5dp"
+                app:boxStrokeColor="@color/colorPrimaryDark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etGecerlilikTarihi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="18dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/cvRehberPersonel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginVertical="3dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                app:cardElevation="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@android:color/white"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvRehberPersonel"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginStart="3dp"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="18dp"
+                                    android:text="Rehber Personel"
+                                    />
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+
+                        <ImageView
+                            android:id="@+id/btn_ileri2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:src="@drawable/right_arroww" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/cvGuzergah"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:cardCornerRadius="8dp"
+                android:visibility="gone"
+                android:layout_marginVertical="3dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                app:cardElevation="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@android:color/white"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvGuzergah"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="3dp"
+                                    android:gravity="center"
+                                    android:text="Güzergah"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="18dp" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/ivGuzergah"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:src="@drawable/right_arroww" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/cvTasinanKurum"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginVertical="3dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                app:cardElevation="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@android:color/white"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvTasinanKurum"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginStart="3dp"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="18dp"
+                                    android:text="Taşınan Kurum"
+                                    />
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+
+                        <ImageView
+                            android:id="@+id/btn_ileri3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:src="@drawable/right_arroww" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="25dp"
+                    android:hint="İşlem Tarihi"
+                    app:boxCornerRadiusTopEnd="8dp"
+                    app:boxCornerRadiusTopStart="8dp"
+                    app:boxStrokeColor="@color/colorPrimaryDark">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etIslemTarihi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:textSize="18dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="25dp"
+                    android:hint="Kaydeden"
+                    app:boxCornerRadiusTopEnd="8dp"
+                    app:boxCornerRadiusTopStart="8dp"
+                    app:boxStrokeColor="@color/colorPrimaryDark">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etKaydeden"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+</ScrollView>
+</LinearLayout>

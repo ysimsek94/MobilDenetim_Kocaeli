@@ -1,0 +1,199 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvReklamBilgisi"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="3dp"
+    android:layout_marginHorizontal="5dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:padding="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="9dp"
+                    android:text="Başlangıç Tarihi"
+                    android:textSize="14dp"
+                    />
+                <TextView
+                    android:text=": "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="9dp"
+                    android:textSize="14dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvBaslangicTarihi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="9dp"
+                    android:text=""
+                    android:textSize="14dp"
+                    android:textColor="#373a6d"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="9dp"
+                    android:text="Bitiş Tarihi"
+                    android:textSize="14dp"
+                    />
+                <TextView
+                    android:text=": "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="9dp"
+                    android:textSize="14dp"
+                    />
+                <TextView
+                    android:id="@+id/tvBitisTarihi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="9dp"
+                    android:text=""
+                    android:textColor="#373a6d"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="9dp"
+                    android:text="ŞasiNo"
+                    android:textSize="14dp" />
+                <TextView
+                    android:text=": "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="56dp"
+                    android:layout_marginTop="9dp"
+                    android:textSize="14dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvSasiNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="9dp"
+                    android:text=""
+                    android:textSize="14dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginStart="3dp"
+                    android:text="Model"
+                    android:textSize="14dp"
+                    />
+                <TextView
+                    android:text=": "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="62dp"
+                    android:layout_marginTop="9dp"
+                    android:textSize="14dp"
+                    />
+                <TextView
+                    android:id="@+id/tvModel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="9dp"
+
+                    android:textSize="14dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="9dp"
+                    android:text="Durumu"
+                    android:textSize="14dp"
+                    />
+                <TextView
+                    android:text=": "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="52dp"
+                    android:layout_marginTop="9dp"
+                    android:textSize="14dp"
+                    />
+                <TextView
+                    android:id="@+id/tvDurumu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="9dp"
+
+                    android:textSize="14dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/btnIleri"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/right_arroww" />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

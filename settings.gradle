@@ -1,0 +1,2 @@
+rootProject.name = "MobilDenetim_Kocaeli"
+include ':app'

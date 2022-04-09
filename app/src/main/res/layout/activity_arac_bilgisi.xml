@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="10"
+    android:orientation="vertical"
+    tools:context=".ui.AracBilgisiActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <include
+            android:id="@+id/toolbarAracBilgisi"
+            layout="@layout/toolbar_no_icon" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="9"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/cardView"
+            android:layout_width="750dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="Arac Bilgisi"
+                            android:textSize="24dp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+
+                            android:layout_height="3dp"
+                            android:background="@color/mtrl_btn_text_color_disabled" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="10"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:text="Plaka :"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvPlakaNo"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_weight="5"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+
+                        android:layout_height="3dp"
+                        android:background="@color/mtrl_btn_text_color_disabled" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="10"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:text="Tescil Tarihi :"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvTescilTarihi"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_weight="5"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+
+                        android:layout_height="3dp"
+                        android:background="@color/mtrl_btn_text_color_disabled" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="10"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:text="Araç Cinsi :"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvAracCinsi"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_weight="5"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+
+                        android:layout_height="3dp"
+                        android:background="@color/mtrl_btn_text_color_disabled" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="10"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:text="Araç Markası :"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvAracMarkasi"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_weight="5"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+
+                        android:layout_height="3dp"
+                        android:background="@color/mtrl_btn_text_color_disabled" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="10"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:text="Araç Modeli :"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvAracModeli"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_weight="5"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+
+                        android:layout_height="3dp"
+                        android:background="@color/mtrl_btn_text_color_disabled" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="10"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:text="Yolcu Adedi :"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvYolcuAdedi"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_weight="5"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+
+                        android:layout_height="3dp"
+                        android:background="@color/mtrl_btn_text_color_disabled" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="10"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:text="Ayakta Yolcu A. :"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvAyaktaYolcuA"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_weight="5"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+
+                        android:layout_height="3dp"
+                        android:background="@color/mtrl_btn_text_color_disabled" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="10"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:text="Engelli Durumu :"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvEngelliDurumu"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_weight="5"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+
+                        android:layout_height="3dp"
+                        android:background="@color/mtrl_btn_text_color_disabled" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="10"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:text="Motor No :"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvMotorNo"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_weight="5"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+
+                        android:layout_height="3dp"
+                        android:background="@color/mtrl_btn_text_color_disabled" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="10"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:text="Şase No :"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvSaseNo"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_weight="5"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+
+                        android:layout_height="3dp"
+                        android:background="@color/mtrl_btn_text_color_disabled" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="10"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:text="İşlem Tarihi :"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvIslemTarihi"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_weight="5"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+
+                        android:layout_height="3dp"
+                        android:background="@color/mtrl_btn_text_color_disabled" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+</LinearLayout>

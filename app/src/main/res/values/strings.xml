@@ -1,0 +1,109 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name" tools:ignore="ExtraTranslation">Mobil Denetim</string>
+
+    <string name="printUkomeMetin">(1)	Hangi Kanun, yönetmelik veya talimatnameye yahut Belediye Kararına aykırılık tespit edilmişse buraya  o kanun, yönetmelik veya kararın adı /içeriği yazılır.
+(2)	İhlal edilen kuralın izahatı yapılacak.
+(3)	Tebligat ilgilinin kendisi yerine elemanı  yada başka bir ilgilisine yapılıyorsa o kişinin kimlik bilgileri buraya ayrıca yazılır.
+(4)	1 Nüsha Encümene, 1 Nüsha İlgiliye, 1 Nüshada dosyada kalacak.
+</string>
+
+    <string-array name="ilceId">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+
+
+    <string-array name="ilceler">
+            <item>Lütfen İlçe Seçiniz..</item>
+            <item>DARICA</item>
+            <item>GEBZE</item>
+            <item>KARTEPE</item>
+            <item>GÖLCÜK</item>
+            <item>KARAMÜRSEL</item>
+            <item>DERİNCE</item>
+            <item>KÖRFEZ</item>
+            <item>İZMİT</item>
+            <item>BAŞİSKELE</item>
+            <item>ÇAYIROVA</item>
+            <item>DİLOVASI</item>
+            <item>KANDIRA</item>
+            <item>TUZLA</item>
+            <item>KADIKÖY</item>
+            <item>PENDİK</item>
+        </string-array>
+
+    <string-array name="denetimTurAd">
+        <item>Denetim Türü Seçiniz..</item>
+        <item>SERVİS ARACI</item>
+        <item>TİCARİ TAKSİ</item>
+        <item>TOPLU TAŞIMA</item>
+    </string-array>
+
+    <string-array name="denetimTurId">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="denetimTipAd">
+        <item>Denetim Tipi Seçiniz..</item>
+        <item>Servis Araç Denetimi</item>
+        <item>Ticari Taksi Denetimi</item>
+        <item>Toplu Taşıma Denetimi</item>
+        <item>Servis Araç Uygunluk</item>
+        <item>Ticari Taksi Araç Uygunluk</item>
+        <item>Toplu Taşıma Araç Uygunluk</item>
+        <item>Servis Araç Muayene</item>
+        <item>Ticari Taksi Araç Muayene</item>
+        <item>Toplu Taşıma Araç Muayene</item>
+
+    </string-array>
+
+
+    <string-array name="denetimTipId">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+
+
+    <string-array name="AracBilgisiTitle">
+        <item>Ruhsat Sahibi :</item>
+        <item>Tel No :</item>
+        <item>Plaka</item>
+        <item>Tescil Tarihi :</item>
+        <item>Araç Markası :</item>
+        <item>Ayakta Yolcu Adet :</item>
+        <item>Şase No :</item>
+        <item>Motor No :</item>
+        <item>İşlem Tarihi</item>
+        <item>Araç Cinsi :</item>
+        <item>Araç Modeli :</item>
+        <item>Engelli Durumu :</item>
+    </string-array>
+
+
+</resources>

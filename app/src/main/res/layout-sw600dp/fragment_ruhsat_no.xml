@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+
+
+    <LinearLayout
+        android:elevation="3dp"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/ivQrCode"
+        android:layout_marginStart="25dp"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@drawable/scanner"/>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="50dp"
+        app:boxStrokeColor="#0748ae">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etRuhsatNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:hint="Ruhsat No ( X-XXXX )"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRuhsatAra"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/white"
+            android:text="Ara"
+            android:maxLength="6"
+            android:digits="ABCDEFGHIİJKLMNOPQRSTUVWXYZabcdefghiıjklmnopqrstuvwxyz1234567890"
+            android:layout_marginStart="200dp"
+            android:layout_marginEnd="200dp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18dp"
+            android:textStyle="normal"
+            app:elevation="3dp"
+            android:layout_marginTop="45dp"
+            app:icon="@drawable/search_icon"
+            app:iconGravity="textEnd"
+            app:strokeColor="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
