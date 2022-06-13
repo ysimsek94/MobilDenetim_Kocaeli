@@ -15,10 +15,13 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.dembs.android.mobildenetim.R;
 import com.dembs.android.mobildenetim.adapters.BandrolBilgisiAdapter;
 import com.dembs.android.mobildenetim.models.BandrolLine;
+import com.dembs.android.mobildenetim.models.CezaLine;
 import com.dembs.android.mobildenetim.models.RuhsatBandrol;
 import com.dembs.android.mobildenetim.ui.RuhsatDetayActivity;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class BandrolBilgisiFragment extends Fragment {
     RecyclerView recyclerView;
@@ -35,6 +38,17 @@ public class BandrolBilgisiFragment extends Fragment {
        if (ruhsatBandrolList !=null)
        {
            bandrolListSize= ruhsatBandrolList.size();
+           if (ruhsatBandrolList.size()>0 ){
+               Collections.sort(ruhsatBandrolList, new Comparator<BandrolLine>() {
+                   public int compare(BandrolLine o1, BandrolLine o2) {
+                       if (o1.getRuhsatBandrol().getIslemTarihi() == null || o2.getRuhsatBandrol().getIslemTarihi() == null)
+                           return 0;
+                       return o1.getRuhsatBandrol().getIslemTarihi().compareTo(o2.getRuhsatBandrol().getIslemTarihi());
+                   }
+               });
+               Collections.reverse(ruhsatBandrolList);
+           }
+
        }
        else
        {  bandrolListSize=0;

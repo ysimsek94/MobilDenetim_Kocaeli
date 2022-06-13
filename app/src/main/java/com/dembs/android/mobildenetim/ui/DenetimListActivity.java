@@ -76,13 +76,13 @@ public class DenetimListActivity extends AppCompatActivity {
                     }else{
 
                         progressBar.setVisibility(View.GONE);
-                       // denetimLineArrayList.sort(new SortDenetimListItem());
-//                        Collections.sort(denetimLineArrayList, new Comparator<DenetimLine>() {
-//                            @Override
-//                            public int compare(DenetimLine r1, DenetimLine r2) {
-//                                return r1.getDenetim().getDenetimTarihi().compareTo(r2.getDenetim().getDenetimTarihi());
-//                            }
-//                        });
+                        Collections.sort(denetimLineArrayList, new Comparator<DenetimLine>() {
+                            public int compare(DenetimLine o1, DenetimLine o2) {
+                                if (o1.getDenetim().getDenetimTarihi() == null || o2.getDenetim().getDenetimTarihi() == null)
+                                    return 0;
+                                return o1.getDenetim().getDenetimTarihi().compareTo(o2.getDenetim().getDenetimTarihi());
+                            }
+                        });
                        Collections.reverse(denetimLineArrayList);
                         setRecyclerView(denetimLineArrayList);
                     }

@@ -68,8 +68,9 @@ public class VarakaYazdirActivity extends AppCompatActivity {
     TextView tvTcVergiNo, tvVarakaNo, tvIlgiliAdSoyad, tvRuhsatNo, tvPlakaNo, tvIkametAdresi, tvIhlalAdresi, tvIhlalTarihSaat, tvIhlalBendi, tvIhlalAciklama,
             tvDenetimPersoneli1, tvDenetimPersoneli2, tvDenetimPersoneli3, tvDenetimPersoneli4, tvTanzim,tvYetkili;
     ProgressBar progressBar;
-    String madde = " - ", bend = " - ";
-    String ikametAdresi = "SEYMEN MAH. GÜNAYDIN CAD. KAPI:30 Daire:12 Turkiye";
+    String madde = " - ";
+    int bendId = 0;
+//    String ikametAdresi = "SEYMEN MAH. GÜNAYDIN CAD. KAPI:30 Daire:12 Turkiye";
     String tanzim = "";
     List<VarakaResult> varakaResultList = new ArrayList<>();
     int width = 750, alignment = 0, startPage = 0, endPage = 0, brightness = 25;
@@ -179,8 +180,8 @@ public class VarakaYazdirActivity extends AppCompatActivity {
         varakaSms.setItemId(itemId);
         varakaSms.setKisiId(kisiId);
         String mesaj = surucuAd + " " + plaka + " Plakalı aracınız ilgili yönetmeliğin ";
-        mesaj = mesaj + madde + "-" + bend + " maddesini ihlal ettiği için " + islemTarihi;
-        mesaj = mesaj + " varaka düzenlenmiştir. Detay için:http://ukome.kocaeli.bel.tr/RuhsatApp/IhlalBilgi?bendId=" + bend;
+        mesaj = mesaj + ihlalMaddeAdi + "-" + ihlalBendAdi + " maddesini ihlal ettiği için " + getFormattedTime(islemTarihi);
+        mesaj = mesaj + " varaka düzenlenmiştir. Detay için:http://ukome.kocaeli.bel.tr/RuhsatApp/IhlalBilgi?bendId=" + bendId;
         varakaSms.setMessage(mesaj);
         varakaSms.setTelNo(surucuTelNo);
         //varakaSms.setTelNo("05071858969");
@@ -228,6 +229,8 @@ public class VarakaYazdirActivity extends AppCompatActivity {
         saat = varakaPrint.getIhlalSaat()== null ? " - " : varakaPrint.getIhlalSaat();
         ihlalMaddeAdi = varakaPrint.getIhlalMaddeAdi()== null ? " - " : varakaPrint.getIhlalMaddeAdi();
         ihlalBendAdi = varakaPrint.getIhlalBendAdi()== null ? " - " : varakaPrint.getIhlalBendAdi();
+        bendId = varakaPrint.getBendId();
+
 
         varakaAciklama = varakaPrint.getVarakaAciklama()== null ? " - " : varakaPrint.getVarakaAciklama();
         ihlalBendAciklama = varakaPrint.getIhlalBendAciklama()== null ? " - " : varakaPrint.getIhlalBendAciklama();

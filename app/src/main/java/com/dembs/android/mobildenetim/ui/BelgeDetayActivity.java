@@ -15,6 +15,7 @@ import androidx.cardview.widget.CardView;
 import com.dembs.android.mobildenetim.R;
 import com.dembs.android.mobildenetim.models.BelgeLine;
 import com.dembs.android.mobildenetim.models.BelgeLineResult;
+import com.dembs.android.mobildenetim.models.BelgeOzetLine;
 import com.dembs.android.mobildenetim.network.Api;
 import com.dembs.android.mobildenetim.network.ClientConfigs;
 import com.dembs.android.mobildenetim.utils.Util;
@@ -25,10 +26,10 @@ import java.util.Objects;
 public class BelgeDetayActivity extends AppCompatActivity {
 
     TextInputEditText etPlaka, etSayisi, etAracSahibi, etGecerlilikTarihi,
-            etIslemTarihi, etKaydeden,etBelgeAdi;
+            etIslemTarihi, etKaydeden,etBelgeAdi,etSivilPlaka;
     TextView tvEmptyList;
-    BelgeLine belgeLine;
-    BelgeLineResult belgeLineResult;
+
+    BelgeOzetLine belgeLineResult;
     Toolbar toolbar;
     Api api;
     private CardView cvRehberPersonel;
@@ -41,17 +42,17 @@ public class BelgeDetayActivity extends AppCompatActivity {
         setContentView(R.layout.activity_belge_detay);
 
         belgeLineResult = getIntent().getParcelableExtra("belgeLineResult");
-        belgeLine = belgeLineResult.getBelgeLine();
+
         initActivity();
         createApiRetrofit();
-        if (belgeLine != null)
+        if (belgeLineResult != null)
             setBelgeBilgileri();
 
         cvTasinanKurum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), TasinanKurumListActivity.class);
-                i.putExtra("belgeId", belgeLine.getBelge().getId());
+                i.putExtra("belgeId", belgeLineResult.getBelgeId());
                 startActivity(i);
             }
         });
@@ -59,7 +60,7 @@ public class BelgeDetayActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), RehberPersonelListActivity.class);
-                i.putExtra("belgeId", belgeLine.getBelge().getId());
+                i.putExtra("belgeId", belgeLineResult.getBelgeId());
                 startActivity(i);
             }
         });
@@ -73,14 +74,15 @@ public class BelgeDetayActivity extends AppCompatActivity {
 
     private void setBelgeBilgileri() {
 
-        String surucu = belgeLineResult.getKisi().getAdi() + " " + belgeLineResult.getKisi().getSoyadi();
-        etPlaka.setText(belgeLineResult.getArac().getPlaka() == null ? " - " : belgeLineResult.getArac().getPlaka());
-        etBelgeAdi.setText(belgeLineResult.getBelgeLine().getBelgeTuru() == null ? " - " : belgeLineResult.getBelgeLine().getBelgeTuru());
-        etSayisi.setText(belgeLine.getBelge().getSayisi() == null ? " - " : belgeLine.getBelge().getSayisi());
+        String surucu = belgeLineResult.getAdi() + " " + belgeLineResult.getSoyadi();
+        etPlaka.setText(belgeLineResult.getPlaka() == null ? " - " : belgeLineResult.getPlaka());
+        etSivilPlaka.setText(belgeLineResult.getSivilPlaka() == null ? " - " : belgeLineResult.getSivilPlaka());
+        etBelgeAdi.setText(belgeLineResult.getBelgeTuru() == null ? " - " : belgeLineResult.getBelgeTuru());
+        etSayisi.setText(String.valueOf(belgeLineResult.getSayisi()));
         etAracSahibi.setText(surucu);
-        etGecerlilikTarihi.setText((belgeLine.getBelge().getGecerlilikTarihi() == null) || (belgeLine.getBelge().getGecerlilikTarihi().equals("")) ? "-" : getFormattedTimeWithoutSaat(belgeLine.getBelge().getGecerlilikTarihi()));
-        etIslemTarihi.setText((belgeLine.getBelge().getIslemTarihi() == null) || (belgeLine.getBelge().getIslemTarihi().equals("")) ? "-" : getFormattedTimeWithoutSaat(belgeLine.getBelge().getIslemTarihi()));
-        etKaydeden.setText((belgeLine.getBelge().getKayitEden() == null) || (belgeLine.getBelge().getKayitEden().equals("")) ? "-" : belgeLine.getBelge().getKayitEden());
+        etGecerlilikTarihi.setText((belgeLineResult.getGecerlilikTarihi() == null) || (belgeLineResult.getGecerlilikTarihi().equals("")) ? "-" : getFormattedTimeWithoutSaat(belgeLineResult.getGecerlilikTarihi()));
+        etIslemTarihi.setText((belgeLineResult.getIslemTarihi() == null) || (belgeLineResult.getIslemTarihi().equals("")) ? "-" : getFormattedTimeWithoutSaat(belgeLineResult.getIslemTarihi()));
+        etKaydeden.setText((belgeLineResult.getKayitEden() == null) || (belgeLineResult.getKayitEden().equals("")) ? "-" : belgeLineResult.getKayitEden());
 
     }
 
@@ -98,6 +100,8 @@ public class BelgeDetayActivity extends AppCompatActivity {
 
         etPlaka = findViewById(R.id.etPlaka);
         Util.setDisableEditText(etPlaka);
+        etSivilPlaka = findViewById(R.id.etSivilPlaka);
+        Util.setDisableEditText(etSivilPlaka);
         etBelgeAdi = findViewById(R.id.etBelgeAdi);
         Util.setDisableEditText(etBelgeAdi);
         etSayisi = findViewById(R.id.etSayisi);

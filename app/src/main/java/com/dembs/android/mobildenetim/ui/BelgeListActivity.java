@@ -17,11 +17,15 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.dembs.android.mobildenetim.R;
 import com.dembs.android.mobildenetim.adapters.BelgeSorgulaAdapter;
 import com.dembs.android.mobildenetim.models.BelgeLineResult;
+import com.dembs.android.mobildenetim.models.BelgeOzetLine;
+import com.dembs.android.mobildenetim.models.DenetimLine;
 import com.dembs.android.mobildenetim.network.Api;
 import com.dembs.android.mobildenetim.network.ClientConfigs;
 import com.dembs.android.mobildenetim.utils.ToolbarInit;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Objects;
 
 import es.dmoral.toasty.Toasty;
@@ -34,7 +38,7 @@ public class BelgeListActivity extends AppCompatActivity {
     Toolbar toolbar;
     Api api;
     String plaka;
-    ArrayList<BelgeLineResult> belgeLineResultArrayList = new ArrayList<>();
+    ArrayList<BelgeOzetLine> belgeLineResultArrayList = new ArrayList<>();
     RecyclerView rvBelgeList;
     TextView tvEmpytList;
     @Override
@@ -47,14 +51,22 @@ public class BelgeListActivity extends AppCompatActivity {
     }
 
     private void getBelgeList() {
-        Call<ArrayList<BelgeLineResult>> call = api.getBelgeList(plaka);
-        call.enqueue(new Callback<ArrayList<BelgeLineResult>>() {
+        Call<ArrayList<BelgeOzetLine>> call = api.getBelgeList(plaka);
+        call.enqueue(new Callback<ArrayList<BelgeOzetLine>>() {
             @Override
-            public void onResponse(Call<ArrayList<BelgeLineResult>> call, Response<ArrayList<BelgeLineResult>> response) {
+            public void onResponse(Call<ArrayList<BelgeOzetLine>> call, Response<ArrayList<BelgeOzetLine>> response) {
                 if (response.isSuccessful()) {
 
                     progressBar.setVisibility(View.GONE);
                     belgeLineResultArrayList = response.body();
+                    Collections.sort(belgeLineResultArrayList, new Comparator<BelgeOzetLine>() {
+                        public int compare(BelgeOzetLine o1, BelgeOzetLine o2) {
+                            if (o1.getTeslimTarihi() == null || o2.getTeslimTarihi() == null)
+                                return 0;
+                            return o1.getTeslimTarihi().compareTo(o2.getTeslimTarihi());
+                        }
+                    });
+                    Collections.reverse(belgeLineResultArrayList);
                     setRecyclerView(belgeLineResultArrayList);
 
                 } else
@@ -62,7 +74,7 @@ public class BelgeListActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onFailure(Call<ArrayList<BelgeLineResult>> call, Throwable t) {
+            public void onFailure(Call<ArrayList<BelgeOzetLine>> call, Throwable t) {
                 progressBar.setVisibility(View.GONE);
                 Toasty.error(getApplicationContext(), "Hata :" + t.toString(), Toast.LENGTH_LONG, true).show();
 
@@ -86,7 +98,7 @@ public class BelgeListActivity extends AppCompatActivity {
         plaka=i.getStringExtra("plaka");
     }
 
-    void setRecyclerView(ArrayList<BelgeLineResult> belgeLineResultArrayList1) {
+    void setRecyclerView(ArrayList<BelgeOzetLine> belgeLineResultArrayList1) {
 
         if (belgeLineResultArrayList1 != null && !belgeLineResultArrayList1.isEmpty()) {
 

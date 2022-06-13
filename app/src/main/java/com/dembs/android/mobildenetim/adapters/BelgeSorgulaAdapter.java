@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.dembs.android.mobildenetim.R;
 import com.dembs.android.mobildenetim.models.BelgeLine;
 import com.dembs.android.mobildenetim.models.BelgeLineResult;
+import com.dembs.android.mobildenetim.models.BelgeOzetLine;
 import com.dembs.android.mobildenetim.ui.BelgeDetayActivity;
 import com.dembs.android.mobildenetim.utils.ProgressDialogManager;
 
@@ -24,11 +25,11 @@ import static com.dembs.android.mobildenetim.utils.DateTimeInit.getFormattedTime
 
 public class BelgeSorgulaAdapter extends RecyclerView.Adapter<BelgeSorgulaAdapter.ViewHolder> {
     private LayoutInflater userInflater;
-    private  ArrayList<BelgeLineResult> belgeLineResultArrayList;
+    private  ArrayList<BelgeOzetLine> belgeLineResultArrayList;
     private  Context mcontext;
     private ProgressDialogManager progressDialogManager;
 
-    public BelgeSorgulaAdapter(Context context, ArrayList<BelgeLineResult> belgeLineResultArrayList) {
+    public BelgeSorgulaAdapter(Context context, ArrayList<BelgeOzetLine> belgeLineResultArrayList) {
         this.mcontext = context;
         this.belgeLineResultArrayList = belgeLineResultArrayList;
 
@@ -48,15 +49,15 @@ public class BelgeSorgulaAdapter extends RecyclerView.Adapter<BelgeSorgulaAdapte
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
-        BelgeLineResult belgeLineResult = belgeLineResultArrayList.get(position);
-        BelgeLine belgeLine = belgeLineResult.getBelgeLine();
-        String surucu = belgeLineResultArrayList.get(position).getKisi().getAdi() + " " + belgeLineResultArrayList.get(position).getKisi().getSoyadi();
+        BelgeOzetLine belgeLineResult = belgeLineResultArrayList.get(position);
+        //BelgeLine belgeLine = belgeLineResult.getBelgeLine();
+        String surucu = belgeLineResultArrayList.get(position).getAdi() + " " + belgeLineResultArrayList.get(position).getSoyadi();
         //Todo belge line dan isletmeci bilgisi dönmüyor
         //holder.tvIsletmeci.setText((belgeLine.getIsletmeci() == null) || (belgeLine.getIsletmeci().equals("")) ? "-" : belgeLine.getIsletmeci());
-        holder.tvGecerlilikTarihi.setText((belgeLine.getBelge().getGecerlilikTarihi() == null) || (belgeLine.getBelge().getGecerlilikTarihi().equals("")) ? "-" : getFormattedTime(belgeLine.getBelge().getGecerlilikTarihi()));
-        holder.tvPlaka.setText((belgeLineResult.getArac().getPlaka() == null) || (belgeLineResult.getArac().getPlaka().equals("")) ? "-" : belgeLineResult.getArac().getPlaka());
+        holder.tvGecerlilikTarihi.setText((belgeLineResult.getGecerlilikTarihi() == null) || (belgeLineResult.getGecerlilikTarihi().equals("")) ? "-" : getFormattedTime(belgeLineResult.getGecerlilikTarihi()));
+        holder.tvPlaka.setText((belgeLineResult.getPlaka() == null) || (belgeLineResult.getPlaka().equals("")) ? "-" : belgeLineResult.getPlaka());
         holder.tvSurucu.setText((surucu == null) || (surucu.equals("")) ? "-" : surucu);
-        holder.tvBelgeAdi.setText((belgeLine.getBelgeTuru() == null) || (belgeLine.getBelgeTuru().equals("")) ? "-" : belgeLine.getBelgeTuru());
+        holder.tvBelgeAdi.setText((belgeLineResult.getBelgeTuru() == null) || (belgeLineResult.getBelgeTuru().equals("")) ? "-" : belgeLineResult.getBelgeTuru());
         holder.cvBelgeRow.setOnClickListener(v -> {
             Intent intent = new Intent(mcontext, BelgeDetayActivity.class);
             intent.putExtra("belgeLineResult", (Parcelable) belgeLineResult);

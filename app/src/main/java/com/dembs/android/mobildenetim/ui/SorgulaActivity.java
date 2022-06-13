@@ -22,6 +22,7 @@ import com.dembs.android.mobildenetim.R;
 import com.dembs.android.mobildenetim.models.AracLine;
 import com.dembs.android.mobildenetim.models.AracReklamResult;
 import com.dembs.android.mobildenetim.models.BelgeLineResult;
+import com.dembs.android.mobildenetim.models.BelgeOzetLine;
 import com.dembs.android.mobildenetim.network.Api;
 import com.dembs.android.mobildenetim.network.ClientConfigs;
 import com.dembs.android.mobildenetim.ui.fragments.AracBilgisiSorgulaFragment;
@@ -55,7 +56,7 @@ public class SorgulaActivity extends AppCompatActivity {
     String header;
     private ArrayList<AracLine> aracList = new ArrayList<>();
     private ArrayList<AracReklamResult> reklamAracArrayList = new ArrayList<>();
-    private ArrayList<BelgeLineResult> belgeList = new ArrayList<>();
+    private ArrayList<BelgeOzetLine> belgeList = new ArrayList<>();
     String plaka;
     @SuppressLint("CheckResult")
     @Override
@@ -104,10 +105,10 @@ public class SorgulaActivity extends AppCompatActivity {
                     }
                     case "Belge Sorgulama": {
 
-                        Call<ArrayList<BelgeLineResult>> call = api.getBelgeList(plaka);
-                        call.enqueue(new Callback<ArrayList<BelgeLineResult>>() {
+                        Call<ArrayList<BelgeOzetLine>> call = api.getBelgeList(plaka);
+                        call.enqueue(new Callback<ArrayList<BelgeOzetLine>>() {
                             @Override
-                            public void onResponse(Call<ArrayList<BelgeLineResult>> call, Response<ArrayList<BelgeLineResult>> response) {
+                            public void onResponse(Call<ArrayList<BelgeOzetLine>> call, Response<ArrayList<BelgeOzetLine>> response) {
                                 if (response.isSuccessful()) {
 
                                     progressDialogManager.dismissDialog();
@@ -121,7 +122,7 @@ public class SorgulaActivity extends AppCompatActivity {
                             }
 
                             @Override
-                            public void onFailure(Call<ArrayList<BelgeLineResult>> call, Throwable t) {
+                            public void onFailure(Call<ArrayList<BelgeOzetLine>> call, Throwable t) {
                                 progressDialogManager.dismissDialog();
                                 Toasty.error(getApplicationContext(), "Hata :" + t.toString(), Toast.LENGTH_LONG, true).show();
 
@@ -289,11 +290,11 @@ public class SorgulaActivity extends AppCompatActivity {
                 }
                 case "Belge Sorgulama": {
 
-                    Call<ArrayList<BelgeLineResult>> call = api.getBelgeList(etPlaka.getText().toString());
-                    call.enqueue(new Callback<ArrayList<BelgeLineResult>>() {
+                    Call<ArrayList<BelgeOzetLine>> call = api.getBelgeList(etPlaka.getText().toString());
+                    call.enqueue(new Callback<ArrayList<BelgeOzetLine>>() {
 
                         @Override
-                        public void onResponse(Call<ArrayList<BelgeLineResult>> call, Response<ArrayList<BelgeLineResult>> response) {
+                        public void onResponse(Call<ArrayList<BelgeOzetLine>> call, Response<ArrayList<BelgeOzetLine>> response) {
                             if (response.isSuccessful()) {
 
                                 belgeList = response.body();
@@ -310,7 +311,7 @@ public class SorgulaActivity extends AppCompatActivity {
                         }
 
                         @Override
-                        public void onFailure(Call<ArrayList<BelgeLineResult>> call, Throwable t) {
+                        public void onFailure(Call<ArrayList<BelgeOzetLine>> call, Throwable t) {
                             progressDialogManager.dismissDialog();
                             Toasty.error(getApplicationContext(), "Hata :" + t.toString(), Toast.LENGTH_LONG, true).show();
 

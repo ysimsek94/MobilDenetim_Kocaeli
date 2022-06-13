@@ -16,11 +16,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.dembs.android.mobildenetim.R;
 import com.dembs.android.mobildenetim.adapters.CezaListAdapter;
 import com.dembs.android.mobildenetim.models.CezaLine;
+import com.dembs.android.mobildenetim.models.DenetimLine;
 import com.dembs.android.mobildenetim.network.Api;
 import com.dembs.android.mobildenetim.network.ClientConfigs;
 import com.dembs.android.mobildenetim.utils.ToolbarInit;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Objects;
 
 import es.dmoral.toasty.Toasty;
@@ -63,6 +66,14 @@ public class CezaListActivity extends AppCompatActivity {
                         }
                         else {
                             progressBar.setVisibility(View.GONE);
+                            Collections.sort(cezaList, new Comparator<CezaLine>() {
+                                public int compare(CezaLine o1, CezaLine o2) {
+                                    if (o1.getCeza().getIhlalTarihi() == null || o2.getCeza().getIhlalTarihi() == null)
+                                        return 0;
+                                    return o1.getCeza().getIhlalTarihi().compareTo(o2.getCeza().getIhlalTarihi());
+                                }
+                            });
+                            Collections.reverse(cezaList);
                             setRecyclerView(cezaList);
                         }
                     }else

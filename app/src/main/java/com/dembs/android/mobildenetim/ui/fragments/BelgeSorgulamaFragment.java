@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.dembs.android.mobildenetim.R;
 import com.dembs.android.mobildenetim.adapters.BelgeSorgulaAdapter;
 import com.dembs.android.mobildenetim.models.BelgeLineResult;
+import com.dembs.android.mobildenetim.models.BelgeOzetLine;
 import com.dembs.android.mobildenetim.ui.SorgulaActivity;
 import com.dembs.android.mobildenetim.utils.AlertDialogManager;
 
@@ -20,7 +21,7 @@ import java.util.ArrayList;
 
 public class BelgeSorgulamaFragment extends Fragment {
     DividerItemDecoration dividerItemDecoration;
-    ArrayList<BelgeLineResult> belgeArrayList = new ArrayList<>();
+    ArrayList<BelgeOzetLine> belgeArrayList = new ArrayList<>();
     @Override
     public View onCreateView(LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {

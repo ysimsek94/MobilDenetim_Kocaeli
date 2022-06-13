@@ -5,6 +5,7 @@ import com.dembs.android.mobildenetim.models.AracReklam;
 import com.dembs.android.mobildenetim.models.AracReklamResult;
 import com.dembs.android.mobildenetim.models.BandrolLine;
 import com.dembs.android.mobildenetim.models.BelgeLineResult;
+import com.dembs.android.mobildenetim.models.BelgeOzetLine;
 import com.dembs.android.mobildenetim.models.CezaLine;
 import com.dembs.android.mobildenetim.models.Denetim;
 import com.dembs.android.mobildenetim.models.DenetimDeleteKontrol;
@@ -71,7 +72,7 @@ public interface Api {
     Call<ArrayList<BandrolLine>> getBandrolList(@Path("plaka") String plaka);
 
     @GET("Ruhsat/v1/belgeler/{plaka}")//YAPILDI
-    Call<ArrayList<BelgeLineResult>> getBelgeList(@Path("plaka") String plaka);
+    Call<ArrayList<BelgeOzetLine>> getBelgeList(@Path("plaka") String plaka);
 
     @GET("Ruhsat/v1/belge-tasinan-kurumlar/{belgeId}")//YAPILDI
     Call<ArrayList<TasinanKurumLine>> getTasinanKurumList(@Path("belgeId") int belgeId);

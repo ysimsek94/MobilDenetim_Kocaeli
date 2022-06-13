@@ -50,7 +50,7 @@ public class AracBilgisiSorgulaAdapter extends RecyclerView.Adapter<AracBilgisiS
         holder.tvMarka.setText(aracList.get(position).getMarkasi());
         holder.tvPlaka.setText(aracList.get(position).getArac().getPlaka());
         holder.tvModel.setText(String.valueOf(aracList.get(position).getArac().getModel()));
-        //Todo getTelNo methodu yeni modelde yok nasıl yapılacak ve tescil tarihi yok
+        //Todo getTelNo methodu yeni modelde yok nasıl yapılacak
         // holder.tvTelno.setText(aracList.get(0).getTelNo());
         holder.tvTescilTarihi.setText(getFormattedTimeWithoutSaat(aracList.get(position).getArac().getTescilTarihi()));
         holder.tvAyaktaYolcuA.setText(String.valueOf(aracList.get(position).getArac().getYolcuAdetArti()));
